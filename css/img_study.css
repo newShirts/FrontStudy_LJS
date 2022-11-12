@@ -1,0 +1,10 @@
+body {
+    background-image: url(tech.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+h3 {
+    width: 1000px;
+    height: 700;
+    overflow: scroll;
+}

@@ -1,0 +1,74 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+header, section, article, aside, footer {
+    background-color: aliceblue;
+    display: block;
+    margin: 3px;
+}
+
+header{
+    height: 100px;
+    /* width 100%; 블록레벨 태그는 자동으로 옆을 채우는 성격이 있어서 설정하지 않아도 가로 100%로 채워짐 */
+}
+
+nav {
+    background-color:pink;
+    height: 100px;
+    width: 80%;
+    margin: 0px /*세로*/ auto/*가로*/;
+    padding-top: 60px; /*margin은 바깥으로 간격 생성, padding은 내부에서 간격 생성. 
+    box-sizing: border-box 지정으로 크기가 더 커지지 않도록한다.*/
+}
+
+
+#topMenu{   /*ul*/ 
+    list-style: none;
+    display: flex;
+    background-color: palevioletred;
+}
+
+#topMenu li {
+    position: relative;
+    background-color: white;
+    margin: 0px auto;
+    width: 120px;
+    text-align: center;
+}
+
+#topMenu > li > ul {
+    position: absolute;
+    display: none;
+    list-style: none;
+}
+
+#topMenu > li:hover > ul {
+    display: block;
+}
+
+div {
+    display: flex;
+}
+
+section {
+    width: 80%;
+    float: left;
+}
+
+article {
+    background-color: white;
+    width: 50%;
+}
+
+aside {
+    width: 20%;
+    height: 500px;
+}
+
+footer {
+    height: 100px;
+}
+

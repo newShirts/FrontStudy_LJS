@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            margin: 0;
+        }
+        div {
+            border: 5px solid black;
+            padding: 40px;
+        }
+
+    </style>
+</head>
+<body>
+    <div> Hello 1 </div>
+    <div style="position: relative;"> Hello 2 
+        <div> Hello 3
+            <div> Hello 4 </div>
+             <div style = "
+                background-color: pink;
+                
+                position: static;
+                left: 200px;
+                ">static</div>
+        
+             <div style = "
+                background-color: red;
+                
+                position: relative; 
+                /* 원래 자기 자리에서 이동 */
+                left: 200px;
+                ">relative</div>
+
+             <div style = "
+                background-color: aqua;
+                
+                position: absolute;
+                top: 0px;
+                ">absolute</div>
+
+             <div style = "
+                background-color: beige;
+                position: fixed;
+                top: 0px;
+                ">fixed</div>
+<!--
+    * absolute와 fixed의 공통점과 차이점
+    -공통점
+    1. 공중부양하게 되어 아래 block의 위로 올라간다.
+    2. 콘텐츠(글자) 크기 중심으로 가로 길이가 맞춰진다.
+    -차이점
+    1. absolute는 부모태그가 static이 아닐 때 부모 태그 기준으로 이동한다.
+    2. fixed는 부모 태그 상관없이 전체화면을 기준으로 이동한다.
+-->
+             <div> Hello 5</div>
+        </div>    
+    </div>
+
+    <div> Hello 6 </div>
+
+</body>
+</html>

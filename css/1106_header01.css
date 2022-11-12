@@ -1,0 +1,13 @@
+
+*{
+    box-sizing: border-box;
+}
+
+.section{
+    margin: o auto;
+    width: 100%;  
+}
+
+.main-menu{
+    display: flex;
+}
