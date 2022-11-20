@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>네비게이션</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <script
+        src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+        crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    </head>
+
+<body>
+    <div class="container" style="padding-top: 100px">
+       
+        <!-- 상단메뉴 -->
+       <nav class="navbar navbar-inverse"> 
+        <!-- default를 inverse로 바꾸면 색상이 반전됨 -->
+           <div class="container-fluid">
+               <div class="navbar-header">
+               </div>
+
+
+
+                   <a class="navbar-brand" href="#">
+                       bootstrap
+                   </a>
+               
+            </div> 
+               <div class="collapse navbar-collapse" id="nav_menu">
+                 <!-- 상단메뉴 카테고리 목록 -->
+                 <ul class="nav navbar-nav">
+                    <li class="active">
+                        <a href="">HTML</a>
+                    </li>
+                    <li>
+                        <a href="">CSS</a>
+                    </li>
+                    <li>
+                        <a href="">Javascript</a>
+                    </li>
+                 </ul>
+               </div>
+           </div>
+       </nav>
+        
+        <!-- 좌측 메뉴 -->
+            <div class="col-sm-2">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            bootstrap 수업안내
+                        </div>
+                        <div class="panel-body">
+                            <a href=""> cdn 소스경로</a> <br/>
+                            <a href=""> 버튼</a> <br/>
+                            <a href=""> 메뉴</a> <br/>
+                            <a href=""> 테이블</a> <br/>
+                            <a href=""> 글꼴</a> <br/>
+                        </div>
+                    </div>
+            </div>
+
+        <!-- 우측 메뉴 -->
+        <div class="col-sm-10">
+            <table class="table table-bordered table-hover">
+            <!-- row 행 3줄 / 각 row 한 줄 안에 th, td 등의 칸 3개씩 넣어보기 -->
+
+                <tr>
+                    <th> 언어명 </th> <th> 난이도 </th> <th> 방식 </th>
+                </tr>
+
+                <tr>
+                    <th> html </th> <th> 하 </th> <th> 교재 </th>
+                </tr>
+
+                <tr>
+                    <th> CSS </th> <th> 중  </th> <th> 강의 </th>
+                </tr>
+            
+                <tr>
+                    <th> JS </th> <th> 상 </th> <th> 강의 </th>
+                </tr>
+            </table>
+        </div>
+
+        <!-- 페이지네이션 -->
+        <div>
+            <!-- nav 태그가 pagination 을 중앙정렬하도록 크게 감싸줌 -->
+            <nav class="text-center">
+                <ul class="pagination">
+                <li class="page-item disabled">
+                    <a class="page-link" href="#">&laquo;</a>
+                </li>
+                <li class="page-item active">
+                    <a class="page-link" href="#">1</a>
+                </li>
+                <li class="page-item">
+                    <a class="page-link" href="#">2</a>
+                </li>
+                <li class="page-item">
+                    <a class="page-link" href="#">3</a>
+                </li>
+                <li class="page-item">
+                    <a class="page-link" href="#">4</a>
+                </li>
+                <li class="page-item">
+                    <a class="page-link" href="#">5</a>
+                </li>
+                <li class="page-item">
+                    <a class="page-link" href="#">&raquo;</a>
+                </li>
+                </ul>
+            </nav>
+        </div>
+
+   </div>
+</body>
+</html>
