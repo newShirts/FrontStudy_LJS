@@ -1,117 +1,130 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>네비게이션</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-    <script
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap.min.css">
+  <script
   src="https://code.jquery.com/jquery-3.4.1.min.js"
   integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
   crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+ <script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
 </head>
 <body>
 
-    <div class="container" style="padding-top: 100px">
-         <!-- default를 inverse로 바꾸면 색상이 반전됨 -->
-        <nav class="navbar navbar-inverse">
-            <div class="container-fluid">
-                <div class="navbar-header">
+  <div class="container" style="padding-top: 100px">  
+    <!-- 1. 상단메뉴 -->
+    <nav class="navbar navbar-inverse">
+       <div class="container-fluid">
+           <div class="navbar-header">            
+           </div>
+           <a class="navbar-brand" href="#">
+             Bootstrap
 
-                 <!-- 오른쪽 메뉴바 data-targe과  42번줄의 id 명칭을 맞춰줘야한다 
-                 <button type="button" class="collapsed navbar-toggle" data-toggle="collapse" data-target="#nav_menu" aria-expanded="false">
-                  <span class="sr-only">Toggle navigation</span>
-                   <span class="icon-bar"></span> 
-                     <span class="icon-bar"></span> 
-                     <span class="icon-bar"></span>
-                     </button>
-                     <a class="navbar-brand" href="#">
-                      bootstrap 강의
-                      </a> -->
-
-
-                </div>
-                    <a class="navbar-brand" href="#">
-                        bootstrap
-                    </a>
-                </div>
-                <div class="collapse navbar-collapse" id="nav_menu">
-                    <!-- <ul class="nav navbar-nav">
-                        <li class="active">
-                            <a href="">HTML</a>
-                        </li>
-                        <li>
-                            <a href="">CSS</a>
-                        </li>
-                        <li>
-                            <a href="">PYTHON</a>
-                        </li>
-                        <li>
-                            <a href="">Javascript</a>
-                        </li>
-                    </ul> -->
-                </div>
-            </div>
-        </nav>
-
-        <div class="col-sm-2">
-            <div class="panel panel-default">
-                <div class="panel-heading">
-                    bootstrap 수업
-                </div>
-                <div class="panel-body">
-                   
-                    <a href=""> 메뉴명칭 </a> <br/>
-                    <a href=""> 메뉴명칭 </a> <br/>
-                    <a href=""> 메뉴명칭 </a> <br/>
-                    <a href=""> 메뉴명칭 </a> <br/>
-                    <a href=""> 메뉴명칭 </a> <br/>
-
-                </div>
+           </a>           
+          <div class="collapse navbar-collapse" id="nav_menu">
+                <!-- 상단메뉴 카테고리 목록 -->
+                <ul class="nav navbar-nav">
+                    <li class="active">
+                        <a href=""> html 코딩 </a>
+                    </li>
+                    <li>
+                        <a href=""> css 코딩  </a>
+                    </li>
+                    <li>
+                        <a href=""> JS 코딩  </a>
+                    </li>
+                    <li>
+                        <a href=""> React 코딩 </a>
+                    </li>
+                </ul>
             </div>
 
         </div>
+      </nav>
 
-        
-        
+  <!-- 2. 좌측 메뉴 -->
+        <div class="col-sm-2">
+          <div class="panel panel-default">
+              <div class="panel-heading">
+                  bootstrap 안내
+              </div>
+              <div class="panel-body">
+                <a href=""> cdn경로 </a> <br/>
+                <a href=""> css 경로 </a> <br/>
+                <a href=""> bootstrap cdn</a> <br/>
+                <a href=""> bootwatch cdn  </a> <br/>
+                <a href=""> 3.4.1 버전</a>  <br/>          
+
+              </div>
+          </div>
+        </div>
+
+    <!-- 3.   우측 게시판     -->     
         <div class="col-sm-10">
             <table class="table table-bordered table-hover">
-                <tr>
-                    <th>제목</th>
-                    <th>작성일</th>
-                    <th>삭제</th>
-                </tr>
-                <tr>
-                    <td> 제목자유형식</td>
-                    <td>2019-03-24</td>
-                    <td>
-                        <a href="#" class="btn btn-danger">삭제</a>
-                    </td>
-                </tr>
-                <tr>
-                    <td> 제목자유형식</td>
-                    <td>2019-03-24</td>
-                    <td>
-                        <a href="#" class="btn btn-danger">삭제</a>
-                    </td>
-                </tr>
-                <tr>
-                    <td> 제목자유형식</td>
-                    <td>2019-03-24</td>
-                    <td>
-                        <a href="#" class="btn btn-danger">삭제</a>
-                    </td>
-                </tr>
+          <!-- row 행 3줄 / 각 row 한줄안에 th, td 등의 칸.. 3개씩 넣어보기  -->
+
+          <tr>
+          <th> 언어명 </th>   <th> 난이도 </th>  <th>  삭제 </th>
+          </tr>
+
+          <tr>
+            <td> html</td>   <td> 하 </td>   <td><a href="#" class="btn btn-danger">삭제</a></td>
+          </tr>
+
+          <tr>
+            <td> css </td>   <td> 중 </td>   <td><a href="#" class="btn btn-danger">삭제</a></td>
+          </tr>
+
+          <tr>
+            <td> JS </td>   <td> 상 </td>   <td><a href="#" class="btn btn-danger">삭제</a></td>
+          </tr>
+
             </table>
 
-            <!-- bootstrapk.com 에서 페이지네이션 <nav> ~</nav> 영역 복사하여 붙여넣기 
-            하고 <nav class="text-center"> 로  페이지네이션 중앙정렬,
-                작성하기버튼 추가 : <a href="#" class="btn btn-default">작성하기</a> -->
-        </div>
+      </div>
 
-    </div>
+
+      <!-- 4. 페이지네이션 -->
+  <div>
+        <!-- nav 태그가  pagination 을 중앙정렬하도록 크게 감싸줌 -->
+    <nav class="text-center">  
+        <ul class="pagination">
+          <li class="page-item disabled">
+            <a class="page-link" href="#">&laquo;</a>
+          </li>
+          <li class="page-item active">
+            <a class="page-link" href="#">1</a>
+          </li>
+          <li class="page-item">
+            <a class="page-link" href="#">2</a>
+          </li>
+          <li class="page-item">
+            <a class="page-link" href="#">3</a>
+          </li>
+          <li class="page-item">
+            <a class="page-link" href="#">4</a>
+          </li>
+          <li class="page-item">
+            <a class="page-link" href="#">5</a>
+          </li>
+          <li class="page-item">
+            <a class="page-link" href="#">&raquo;</a>
+          </li>
+        </ul>
+    </nav>
+  </div>
+      
+
+
+
+
     
+  </div>
+
 </body>
 </html>
