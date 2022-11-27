@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+          width: 960px;
+          margin : 0 auto;
+        }
+        .navi{
+          width:960px;
+          height:60px;
+          padding-bottom:10px;
+          border-bottom:2px solid #ccc;
+        }
+      
+        .navi ul{
+          list-style: none;
+          padding-top:10px; 
+          padding-bottom:5px;
+        }
+        .navi ul li {
+          display:inline-block;
+          width:150px;
+          padding:10px;   
+        }
+        .navi a:link, .navi a:visited {
+          font-size:14px;
+          padding: 10px; 
+          text-decoration: none;  /* 밑줄 없음 */
+      
+        }
+        .navi a:hover,  .navi a:focus {
+          background-color:#222;  /* 배경색 */
+          color:#fff;  /* 글자색 */
+        }
+      
+        .navi a:active {
+          background-color:#f00;  /* 배경색 */
+        }
+        .contents {
+          margin:30px auto;
+          width:400px;
+          padding:20px;
+          border:1px solid #222;
+          border-radius:5px;        
+        }
+        #intro:target {
+          background-color:#0069e0;  /* 배경색 - 파란색 */
+          color:#fff;  /* 글자색 - 흰색 */
+        }
+        #room:target {
+          background-color:#ff9844;  /* 배경색 - 주황색 */
+        }
+        #reservation:target{
+          background-color:#fff8dc;  /* 배경색 - 베이지색 */
+        }
+      </style>
+</head>
+<body>
+    <div class="container">
+        <nav class="navi">
+            <ul>
+                <li><a href="#intro"> 이용 안내 </a></li>
+                <li><a href="#room"> 객실 소개 </a></li>
+                <li><a href="#reservation">예약 방법 및 요금</a></li>
+                <li><a href="1127_booking02.html">예약하기</a></li>
+            </ul>
+        </nav>
+        
+        <div id="intro" class="contents">
+            <h2>이용안내</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam elementum lectus nisl, id pharetra diam ullamcorper nec. 
+            Etiam pellentesque lacus posuere lacinia rhoncus. Maecenas condimentum ut ex quis aliquet. Donec pharetra mauris quis felis pretium
+            luctus. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. In facilisis auctor iaculis. 
+            Cras rhoncus quam at nunc euismod, vitae rutrum nunc vulputate. Proin eget sapien sapien. Sed venenatis ut orci quis aliquet. 
+            Ut ligula velit, varius sed arcu a, commodo fermentum metus. Nunc magna diam, tincidunt sit amet felis convallis, faucibus facilisis 
+            eros. Nulla facilisi. Curabitur sed ultricies dui, eu ultrices ipsum.</p>
+        </div>
+
+        <div id="room" class="contents">
+            <h2>객실 소개</h2>
+            <p>Donec placerat mattis rhoncus. Quisque ornare magna quis dignissim fringilla. Proin scelerisque elit malesuada leo dignissim 
+                malesuada. Suspendisse quis magna sit amet neque semper pulvinar bibendum ac est. Maecenas eu tortor tincidunt, dictum justo eu, 
+                auctor erat. Aenean eget mauris in odio auctor rutrum nec id mi. Integer sollicitudin tempus felis, eu eleifend enim. Nam ut 
+                tellus et ex ullamcorper commodo vitae non ex.</p>
+        </div>
+
+        <div id="reservation" class="contents">
+            <h2>예약 방법 및 요금</h2>
+            <p>Pellentesque imperdiet tellus porta, sollicitudin nisl id, rutrum felis. Sed blandit viverra gravida. Ut luctus justo mauris, 
+                sodales fringilla velit aliquet nec. Morbi blandit et augue quis vulputate. Etiam nec tellus id magna aliquet tristique eu eu 
+                libero. Ut tristique finibus nunc, vel ultricies lectus sodales eget. Aliquam quam dui, efficitur vitae malesuada id, dapibus 
+                sed justo. Proin dapibus vitae ex eu volutpat. Donec nunc magna, malesuada in venenatis et, elementum ac augue. Nulla non ligula 
+                turpis. Pellentesque mollis, turpis non luctus rutrum, nisi nisl sodales ex, sed lacinia justo est quis sem. Cras nec leo porta, 
+                dignissim enim eget, dignissim augue.</p>
+        </div>
+
+        <div id="booking02.html" class="contents">
+            <h2>예약하기</h2>
+            <p>Aenean sed finibus dolor, in egestas diam. Pellentesque volutpat sagittis sollicitudin. Nam iaculis egestas convallis. 
+                Etiam et purus non nisi sodales eleifend non at leo. Cras porttitor urna vel eros pulvinar, vitae pulvinar justo pretium. 
+                Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nullam id tempor arcu.</p>
+        </div>
+    
+    </div>
+</body>
+</html>
