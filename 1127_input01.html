@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .formBox {
+            width: 300px;
+            height: 100px;
+            background-color: aliceblue;
+            }
+
+        .formBox2 {
+            width: 200px;
+            height: 100px;
+            background-color: aquamarine;
+            text-align: center;
+            }
+    </style>
+</head>
+<body>
+
+  <form class="formBox" action="/bURL">
+    <input type="checkbox" id="fruitId1">
+    <label for="fruitId1"> apple </label>
+
+    <input type="checkbox" id="fruitId2">
+    <label for="fruitId2"> grape </label>
+
+    <input type="checkbox" id="fruitId3">
+    <label for="fruitId3"> orange </label> <br><br><br>
+ 
+    <div style="text-align: center;"> <input type="submit" value="전송"> </div>
+
+  </form>
+
+  <br>
+  <br>
+  <br>
+ 
+  <form class="formBox2" action="/aURL">
+
+    <input type="radio" id="woman" name="gender">
+    <label for="woman"> 여성 </label> <br>
+    
+    <input type="radio" id="man" name="gender">
+    <label for="man"> 남성 </label> <br> <br>
+
+    <input type="submit" value="전송">
+
+  </form>
+
+ 
+</body>
+</html>
