@@ -61,3 +61,6 @@ console.log(globalName);
   const daysInWeek = 7;
   console.log('일주일은 몇 일인가? 답: ' + daysInWeek + '일')
   console.log(`일주일은 몇 일인가? 답: ${daysInWeek}일`) // 주의: 역따옴표(tab키 위의 물결표시와 같이 있음)로 작성
+  
+  const price = 4000;
+  // const = 5000;  const 는 재정의가 불가능하므로 오류 발생함. let은 재정의 가능
