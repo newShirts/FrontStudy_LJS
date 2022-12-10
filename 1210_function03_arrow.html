@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //1. 일반 함수
+        // function add(x,y) {return x+y}
+
+        //2-1. 화살표 함수
+        //const add = (a,b) => {return a+b}
+        
+        //2-2. 화살표 함수
+        const add = (a,b) => a+b
+       
+        //함수 호출
+        const sum = add(25,10)
+        console.log(sum)
+
+        //예제
+        //1) function double (n){return n*2}를 화살표 함수로 변경하기   
+        const double = n =>n*2
+
+        //2) alert 로 데이터는 3을 함수에 넣고 호출해서 출력하기
+        alert (double(3))
+
+    </script>
+</body>
+</html>

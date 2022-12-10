@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        /*
+        switch문 vs if문 비교
+        1. switch문
+        장점: 가독성이 좋다.
+        단점: 상수 - switch() 의 괄호 안에는 데이터가 자유롭게 들어갈 수 있지만, case 뒤에는 변수나 조건식 등이
+              오게 되면 switch문이 작동하지 않는다.
+              
+              if문은 표현식에 변수 활용 가능
+              let num = prompt("숫자를 입력하세요."," ")
+              if(num>0) {
+                document.write("입력한 숫자는 양수입니다.")
+              } else {document.write("입력한 숫자는 음수입니다.")}
+
+              !switch는 case 뒤에 변수 활용 불가능 - 아래의 코드는 에러 발생!
+              switch (num){
+                case num>0 :
+                    document.write("입력한 숫자는 양수입니다.")
+                    break
+
+                    default(document.write("숫자를 입력해주세요."))
+              }
+        */
+        let coffee = prompt('가격을 조회하고 싶은 메뉴를 입력하세요.')
+
+        // switch (coffee) {
+        //     case '아메리카노' : document.write('1500원')
+        //     break
+
+        //     case '카페라떼' : document.write('2000원')
+        //     break
+
+        //     case '카푸치노' : document.write('3000원')
+        //     break
+
+        //     default : document.write('잘못된 메뉴를 입력하셨습니다.')
+        // }
+
+
+        //2. if문
+        if(coffee=='아메리카노') {document.write('1500원')}
+         else if (coffee=='카페라떼') {document.write('2000원')}
+         else if (coffee=='카푸치노') {document.write('3000원')}
+         else {document.write('잘못된 메뉴를 입력하셨습니다.')}
+    </script>
+</body>
+</html>
