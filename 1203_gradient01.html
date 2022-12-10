@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Gradient 연습 01 </title>
+    <style>
+        .customColor1 {
+            width: 100px;
+            height: 100px;
+        }
+        .customColor2 {
+            width: 200px;
+            height: 100px;
+        }
+        /* linear-gradient (to 방향 또는 각도, 시작색상, 끝색상) */
+        /* 방향은 right left top bottom, 각도는 deg로 끝나는 지점을 표현 */
+        .box1 {background: linear-gradient(to right top, white, black);}
+        .box2 {background: linear-gradient(to left bottom, white, black);}
+        .box3 {background: linear-gradient(to right, white, black)}
+        .box4 {background: linear-gradient(to bottom, white, black);}
+        .box5 {background: linear-gradient(45deg, white, black);}
+        .box6 {background: linear-gradient(135deg, white, black);}
+        .box7 {background: linear-gradient(225deg, white, pink, black);}
+        .box8 {background: radial-gradient(white, skyblue, blue);}
+        .box9 {background: radial-gradient(circle, white, yellow, red);}
+    </style>
+</head>
+<body>
+    
+    <div class="customColor1 box1"></div>
+    <div class="customColor1 box2"></div>
+    <div class="customColor1 box3"></div>
+    <div class="customColor1 box4"></div>
+    <div class="customColor1 box5"></div>
+    <div class="customColor1 box6"></div>
+    <div class="customColor1 box7"></div>
+    <br>
+    <div class="customColor2 box8"></div>
+    <div class="customColor2 box9"></div>
+
+
+</body>
+</html>
