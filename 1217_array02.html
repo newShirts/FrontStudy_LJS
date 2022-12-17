@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let arr = [1,'배열', [1,2,3,4], {red:'빨강', blue: '파랑'}, function a(){return 'hi'}]
+        console.log(arr[0])
+        console.log(arr[1])
+        console.log(arr[2])
+        console.log(arr[3])
+        console.log(arr[4])
+
+        console.log(arr[2],[1])
+        console.log(arr[3],[0])
+        console.log(arr[4],[4])
+
+        console.log(arr.length)
+        console.log(arr[arr.length-5]) //index 0 : 1
+
+        //배열 push, pop, shift, unshift, splice, concat
+
+        let rainbow = ['흰','노','초','검']
+        
+        console.log(rainbow)
+        //배열변수명.pop() : 맨 뒤의 값(검) 삭제
+        rainbow.pop()
+        console.log(rainbow) //흰, 노, 초
+        //배열변수명.shift() : 맨 앞의 값(흰) 삭제
+        rainbow.shift()
+        console.log(rainbow) //노, 초
+        //배열변수명.unshift() : 맨 앞에 값 추가
+        rainbow.unshift('빨','주')
+        console.log(rainbow)
+        //배열변수명.push() : 맨 뒤에 값 추가
+        rainbow.push('파','남','보')
+        console.log(rainbow)
+
+        //배열변수명.splice() : 배열에서 원하는 인덱스의 값부터 삭제하거나, 원하는 개수의 데이터를 삭제하고 추가
+        rainbow.splice(1,2) //[1] 자리부터 2개 데이터 삭제
+        console.log(rainbow) // ['빨', '초', '파', '남', '보']
+        rainbow.splice(3) //[3] 자리부터 끝까지 다 삭제
+        console.log(rainbow) // ['빨', '초', '파']
+        rainbow.splice(1,2,'주','노') //[1] 자리부터 데이터 2개 삭제하고 그 자리에 '주','노'가 추가됨.
+        console.log(rainbow) // ['빨', '주', '노']
+
+        //배열변수명1.concat(배열변수명2) : 두 개의 배열을 연결
+        const rainbow2 = ['초','파','남','보']
+        const perfectRainbow = rainbow.concat(rainbow2)
+        console.log(perfectRainbow)
+
+        //indexOf('a') : 배열에서 처음으로 a라는 데이터가 발견되는 인덱스를 반환
+        const nature = ['sky','sea','tree','sky','sky']
+        console.log(nature.indexOf('sky')) //0
+        console.log(nature.indexOf('sun')) // 존재하지 않는 데이터는 -1을 반환
+
+        //lastIndexOf('b') : 배열에서 (중복된 데이터 b가 존재해도) 마지막 데이터 b가 발견되는 인덱스를 반환
+        console.log(nature.lastIndexOf('sky')) //4
+
+        //includes('c') : 배열에 들어가 있는 데이터는 true를 반환, 포함되지 않은 데이터는 false를 반환
+        console.log(nature.includes('tree')) //true
+        console.log(nature.includes('wind')) //false
+    </script>
+</body>
+</html>
