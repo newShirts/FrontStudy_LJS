@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        //방법1 : 합계 forEach
+        let animals = ['rabbit','tiger','cat','dog']
+        animals.forEach(animal => {console.log(animal)})
+
+        const num = [1,2,3]
+        let sum = 0;
+        num.forEach (a =>{sum += a})
+        console.log('forEach() 합계: ' + sum) //6
+
+        // 0 + 1 = 1
+        // 1 + 2 = 3
+        // 3 + 3 = 6
+
+        //방법2 : 합계 reduce
+        const num2 = [1,2,3]
+        let sum2 = num2.reduce((accumultor,current) => accumultor + current,0)
+                                // 1) accumulator 파라미터에 초기값 0이 들어간다.
+                                // 2) current 파라미터에 배열데이터를 하나씩 받아준다.
+                                //    즉, 1을 받아서 실행코드를 돌고, 다시 2, 3 등 배열 데이터를 하나씩 계속 받아줌.
+                                // (accumultor,current) : (0,1) (1,2) (3,3)
+        console.log('reduce() 합계: ' + sum2) //6
+        
+
+        const arr = [1,2,3,4]
+        const initialValue = 0;
+        const sum3 = arr.reduce( (previousValue, currentValue) => previousValue + currentValue, initialValue)
+        console.log(sum3)
+
+        //reduce() 함수 예제1 : numbers 배열 데이터들의 평균 구하기
+        const numbers = [1,2,3,4,5]
+        const average = numbers.reduce( (accumulator, current, index, array) => {
+                if(index===array.length-1){
+                    return(accumulator + current)/array.length
+                }
+                return accumulator + current;
+            },0) //reduce 종료
+        console.log(average)
+
+        //reduce() 함수 예제2 : 배열을 객체로 변경하기
+        const alphabets = ['a','a','a','b','c','c','d','e']
+        const counts = alphabets.reduce( (accumulator, current) => {
+            if(accumulator[current]){ //'a'라는 데이터가 있다면 다음을 실행
+            accumulator[current] += 1 //accumulator[current] = accumulator[current]+1
+                } else{accumulator[current] = 1}
+
+                return accumulator;
+            } ,{}) // 초기값은 {}로 객체화한다. 데이터는 비어있는 상태!
+            console.log(counts)
+
+
+            //reduce() 함수 예제3: 배열을 객체로 변경하기(동명이인이 몇 명인지 객체 정보로 출력해보자)
+            //예) Messi가 한 명이라면 1을, 두 명이면 2를 value로 담아서 출력
+            const name = ['Messi', 'Messi', 'Son', 'Ronaldo', 'Ronaldo', 'Ronaldo']
+            const result = name.reduce( (accumulator, current) => {
+                if(current in accumulator){
+                    accumulator[current] ++
+                } else{accumulator[current] = 1}
+
+                return accumulator;
+            } ,{})
+            console.log(result)
+
+    </script>
+</body>
+</html>
